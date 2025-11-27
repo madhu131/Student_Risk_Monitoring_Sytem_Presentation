@@ -1156,3 +1156,6 @@ body {
         page-break-inside: avoid;
     }
 }
+html {
+  scroll-padding-top: 100vh; /* adjust if your hero has a different height */
+}
