@@ -249,7 +249,7 @@ body {
 
 /* Executive Summary */
 .executive-summary {
-    padding-top: 120vh; /* more than hero height to account for parallax */
+    padding-top: 100vh; /* more than hero height to account for parallax */
 }
 
 
