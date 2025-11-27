@@ -249,8 +249,9 @@ body {
 
 /* Executive Summary */
 .executive-summary {
-    padding-top: calc(100vh + 2rem); /* 2rem is optional spacing */
+    padding-top: 120vh; /* more than hero height to account for parallax */
 }
+
 
 
 .summary-content {
