@@ -249,8 +249,10 @@ body {
 
 /* Executive Summary */
 .executive-summary {
-    background: var(--bg-white);
-    padding: 6rem 0;
+    position: relative;
+    z-index: 10; /* higher than dashboard card */
+    clear: both; /* in case floats are causing overlap */
+    margin-top: 2rem; /* add some space below the card */
 }
 
 .summary-content {
