@@ -14,13 +14,15 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-icon">📊</span>
+                <img src="logo.jpeg" alt="Logo" class="logo-image">
                 <span class="logo-text">Student Risk Dashboard</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#problem">Problem</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#solution">Solution</a></li>
+                <li><a href="#charter">Charter</a></li>
                 <li><a href="#architecture">Architecture</a></li>
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#insights">Insights</a></li>
@@ -53,7 +55,7 @@
                 <h2>Executive Summary</h2>
             </div>
             <div class="summary-content">
-                <p>In our project, we address Horizon State University's growing challenge of declining retention during the first two years of undergraduate study. we identified that advisors currently lack a unified and proactive way to monitor academic, financial, and engagement risk factors, because this information is spread across disconnected systems. This fragmentation leads to delays, missed warnings, and inconsistent interventions, ultimately increasing the chances of academic failure or withdrawal. To solve this problem, we have developed a Student Risk Monitoring Dashboard, a centralized platform built using artificially generated student data. Our system brings together academic records, attendance, financial aid indicators, and engagement behaviors into one dashboard. By applying predictive analytics, the platform identifies early signs of students at risk of program dropout and provides advisors with real-time alerts and personalized recommendations that they can send to students. This allows advisors to intervene earlier and focus their attention on the students who need support the most.</p>
+                <p>In our project, we address Horizon State University's growing challenge of declining retention during the first two years of undergraduate study. We identified that advisors currently lack a unified and proactive way to monitor academic, financial, and engagement risk factors, because this information is spread across disconnected systems. This fragmentation leads to delays, missed warnings, and inconsistent interventions, ultimately increasing the chances of academic failure or withdrawal. To solve this problem, we developed the Student Risk Monitoring Dashboard, a centralized platform built using artificially generated student data. Our system brings together academic records, attendance, financial aid indicators, and engagement behaviors into one dashboard. By applying predictive analytics, the platform identifies early signs of students at risk of program dropout and provides advisors with real-time alerts and personalized recommendations that they can send to students. This allows advisors to intervene earlier and focus their attention on the students who need support the most.</p>
             </div>
         </div>
     </section>
@@ -90,7 +92,7 @@
     </section>
 
     <!-- Research & Insights -->
-    <section class="section bg-light">
+    <section id="research" class="section bg-light">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Discovery</span>
@@ -98,30 +100,23 @@
             </div>
             <div class="research-content">
                 <div class="insight-box">
-                    <h3>Key Research Findings</h3>
-                    <div class="insight-grid">
-                        <div class="insight-item">
-                            <span class="insight-number">92%</span>
-                            <p>Model accuracy in identifying at-risk students</p>
-                        </div>
-                        <div class="insight-item">
-                            <span class="insight-number">88%</span>
-                            <p>Precision in risk predictions</p>
-                        </div>
-                        <div class="insight-item">
-                            <span class="insight-number">94%</span>
-                            <p>Recall rate ensuring comprehensive detection</p>
-                        </div>
-                    </div>
+                    <h3>Research Foundations</h3>
+                    <ul>
+                        <li><strong>Learning Analytics Framework:</strong> Applied established learning analytics principles from educational research to structure our data collection and analysis approach, ensuring alignment with proven methods for identifying at-risk student behaviors</li>
+                        <li><strong>Dashboard Design Principles:</strong> Leveraged research on educational data visualization and cognitive load theory to create an interface that advisors can quickly interpret and act upon without extensive training</li>
+                        <li><strong>Early Warning Systems:</strong> Reviewed literature on predictive models in higher education, incorporating best practices from institutions that successfully reduced attrition through proactive intervention strategies</li>
+                        <li><strong>Organizational Data Integration:</strong> Studied frameworks for breaking down data silos in educational institutions, implementing structures that enable cross-functional data sharing while maintaining privacy standards</li>
+                    </ul>
                 </div>
                 <div class="research-methods">
-                    <h3>Research Methodology</h3>
+                    <h3>Key Learnings & Achievements</h3>
                     <ul>
-                        <li>Applied learning analytics and dashboard design principles from educational data visualization research</li>
-                        <li>Incorporated organizational structures for educational data analytics to reduce silos</li>
-                        <li>Based synthetic dataset on national benchmarks including first-generation student status, GPA trajectories, and attendance patterns</li>
-                        <li>Implemented alerts and intuitive charts aligned with advisor goals</li>
-                        <li>Drew from research on proactive engagement showing that regular communication and early intervention improve retention</li>
+                        <li><strong>Synthetic Data Validity:</strong> Successfully created a realistic dataset reflecting national benchmarks for first-generation students, GPA distributions, and attendance patterns, validating that synthetic data can effectively simulate real-world scenarios for model development</li>
+                        <li><strong>Multi-Factor Risk Assessment:</strong> Discovered that combining academic, engagement, and financial indicators provides significantly more accurate risk prediction than any single factor alone, confirming the importance of holistic student monitoring</li>
+                        <li><strong>Engagement as Early Indicator:</strong> Research revealed that disengagement signals (low LMS logins, missed advisor meetings, declining tutoring attendance) often precede academic decline by several weeks, creating critical intervention windows</li>
+                        <li><strong>Advisor-Centric Design:</strong> User research with academic advisors identified that color-coded alerts, risk thresholds, and one-click email interventions significantly improve workflow efficiency and intervention response times</li>
+                        <li><strong>Scalability Validation:</strong> Demonstrated that our architecture can handle large-scale datasets (18,000+ students) while maintaining responsive performance through strategic caching and data optimization techniques</li>
+                        <li><strong>Ethical AI Implementation:</strong> Achieved fair prediction outcomes by prioritizing behavioral and academic indicators over demographic attributes, reducing bias while maintaining prediction effectiveness</li>
                     </ul>
                 </div>
             </div>
@@ -138,7 +133,7 @@
             <div class="solution-content">
                 <div class="solution-overview">
                     <h3>The Student Risk Monitoring Dashboard</h3>
-                    <p>A comprehensive platform designed to proactively identify undergraduate students at risk of academic underperformance or program dropout. The system integrates three core components: synthetic data generation, predictive modeling using machine learning, and an interactive Streamlit-based dashboard, providing advisors with actionable insights and timely interventions.</p>
+                    <p>A comprehensive platform designed to proactively identify undergraduate students at risk of academic underperformance or dropout. The system integrates three core components: synthetic data generation, predictive modeling using machine learning, and an interactive Streamlit-based dashboard, providing advisors with actionable insights and timely interventions.</p>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -177,7 +172,7 @@
     </section>
 
     <!-- Project Charter -->
-    <section class="section bg-light">
+    <section id="charter" class="section bg-light">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Foundation</span>
@@ -185,22 +180,255 @@
             </div>
             <div class="charter-content">
                 <div class="charter-grid">
+                    <!-- A. General Information -->
                     <div class="charter-box">
-                        <h3>Project Objectives</h3>
+                        <h3>A. General Information</h3>
                         <ul>
-                            <li>Enable early identification of at-risk students through predictive analytics</li>
-                            <li>Provide unified insights consolidating academic, financial, and engagement data</li>
-                            <li>Support efficient advisor workflows with actionable recommendations</li>
-                            <li>Improve student retention and reduce program dropout rates</li>
+                            <li><strong>Project Title:</strong> Student Risk Monitoring Dashboard</li>
+                            <li><strong>Brief Description:</strong> A comprehensive predictive analytics platform that consolidates academic, financial, and engagement data to identify at-risk undergraduate students and enable proactive advisor interventions</li>
+                            <li><strong>Prepared By:</strong> Madhu Babu Takasar, Bhavana Talari, Sujith Raj Vanamadi, Pardhu Maddula, Shivathmika Neeradi</li>
+                            <li><strong>Date:</strong> November 2025</li>
+                            <li><strong>Version:</strong> 1.0</li>
                         </ul>
                     </div>
+
+                    <!-- B. Project Objective -->
                     <div class="charter-box">
-                        <h3>Scope</h3>
+                        <h3>B. Project Objective</h3>
+                        <p><strong>Value to Organization:</strong> The Student Risk Monitoring Dashboard addresses Horizon State University's declining retention rates by providing advisors with unified, actionable insights that enable early identification and intervention for at-risk students. By consolidating fragmented data from multiple systems into a single predictive analytics platform, the project eliminates delays in identifying struggling students and enables targeted, timely support that improves retention outcomes.</p>
+                        <p><strong>Strategic Alignment:</strong> This project directly supports HSU's strategic priority of student success and retention excellence. It aligns with institutional goals to reduce first- and second-year attrition, improve graduation rates, and demonstrate data-driven decision-making in student services. The platform advances the university's commitment to equity by ensuring all students, regardless of background, receive proactive support based on behavioral indicators rather than demographics.</p>
+                        <p><strong>Expected Results:</strong> Advisors will gain real-time visibility into student risk profiles, enabling prioritized interventions for high-risk populations. The dashboard will reduce time spent on manual data compilation, increase intervention response rates, and provide measurable tracking of advisor outreach effectiveness. Long-term, the platform is expected to increase retention rates, reduce program dropout, and improve student academic performance metrics.</p>
+                        <p><strong>Benefits & Problems Resolved:</strong> Resolves fragmented data systems, eliminates manual tracking processes, reduces advisor workload through automation, enables evidence-based intervention strategies, and provides institutional accountability through intervention tracking and outcome analysis.</p>
+                    </div>
+
+                    <!-- C. Assumptions -->
+                    <div class="charter-box">
+                        <h3>C. Assumptions</h3>
                         <ul>
-                            <li><strong>In Scope:</strong> Predictive modeling, risk detection, dashboard development, automated email interventions, visual analytics</li>
-                            <li><strong>Out of Scope:</strong> Real-time LMS integration, financial aid processing, direct student messaging within platform</li>
+                            <li>The synthetic dataset accurately reflects real-world student behavior patterns and risk indicators based on national benchmarks and educational research</li>
+                            <li>Advisors have access to computers with internet connectivity and web browsers capable of running the Streamlit dashboard application</li>
+                            <li>Advisors possess basic digital literacy and can navigate web-based applications with minimal training</li>
+                            <li>Student data (academic records, attendance, engagement metrics, financial indicators) can be extracted, cleaned, and loaded into the system on a regular basis</li>
+                            <li>Institutional email systems support automated email sending from the dashboard for intervention notifications</li>
+                            <li>Predictive model accuracy of 92% is sufficient for advisor decision-making and will be validated through pilot testing</li>
+                            <li>Risk thresholds (80% attendance, 2.0 GPA) align with institutional policies and advisor workflows</li>
+                            <li>Privacy and security requirements (FERPA compliance, encryption, authentication) can be implemented within project timeline and budget constraints</li>
+                            <li>Stakeholder buy-in from advisors, administration, and IT support will be maintained throughout development and deployment</li>
                         </ul>
                     </div>
+
+                    <!-- D. Project Scope -->
+                    <div class="charter-box">
+                        <h3>D. Project Scope</h3>
+                        <p><strong>Project Boundaries:</strong> The Student Risk Monitoring Dashboard encompasses the design, development, testing, and deployment of a web-based predictive analytics platform for academic advisors at Horizon State University. The project includes synthetic data generation, machine learning model development, interactive dashboard interface creation, and automated intervention systems.</p>
+                        <p><strong>In Scope:</strong></p>
+                        <ul>
+                            <li>Creation of comprehensive synthetic student dataset (18,000+ records) reflecting academic, demographic, engagement, and financial attributes</li>
+                            <li>Development and training of machine learning risk prediction model with binary classification and continuous probability scoring</li>
+                            <li>Design and implementation of Streamlit-based web dashboard with overview metrics, at-risk student filtering, and visual analytics</li>
+                            <li>Integration of automated email intervention system enabling advisors to send personalized recommendations to students</li>
+                            <li>Implementation of interactive data visualizations (histograms, scatter plots, correlation heatmaps, demographic breakdowns)</li>
+                            <li>Development of security features including authentication, password hashing, and data encryption</li>
+                            <li>Documentation of system architecture, data model, and user workflows</li>
+                            <li>Testing and validation of model accuracy, dashboard performance, and intervention delivery</li>
+                        </ul>
+                        <p><strong>Out of Scope:</strong></p>
+                        <ul>
+                            <li>Real-time integration with live LMS (Learning Management System) platforms</li>
+                            <li>Direct processing or modification of financial aid records or payment systems</li>
+                            <li>Direct student-facing portal or mobile application for student self-service</li>
+                            <li>Integration with university-wide ERP (Enterprise Resource Planning) systems</li>
+                            <li>Automated decision-making without advisor review (all interventions require human judgment)</li>
+                            <li>Predictive analytics for graduate students or non-degree seeking populations</li>
+                            <li>Historical data migration from legacy systems (project uses synthetic data)</li>
+                        </ul>
+                    </div>
+
+                    <!-- E. Project Milestones -->
+                    <div class="charter-box">
+                        <h3>E. Project Milestones</h3>
+                        <div class="milestone-list">
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Project Kickoff</strong>
+                                    <span class="milestone-date">Week 1</span>
+                                </div>
+                                <p>Project charter approval and team formation</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Requirements Analysis</strong>
+                                    <span class="milestone-date">Week 2-3</span>
+                                </div>
+                                <p>Requirements document and system architecture design</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Data Generation</strong>
+                                    <span class="milestone-date">Week 4-5</span>
+                                </div>
+                                <p>Synthetic dataset (18,000+ student records) with validated attributes</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Model Development</strong>
+                                    <span class="milestone-date">Week 6-7</span>
+                                </div>
+                                <p>Trained machine learning model achieving 92% accuracy</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Dashboard Development</strong>
+                                    <span class="milestone-date">Week 8-10</span>
+                                </div>
+                                <p>Functional Streamlit dashboard with overview and analytics pages</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Visualization Integration</strong>
+                                    <span class="milestone-date">Week 11</span>
+                                </div>
+                                <p>Interactive charts and analytics visualizations</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Intervention System</strong>
+                                    <span class="milestone-date">Week 12</span>
+                                </div>
+                                <p>Automated email notification system with confirmation logging</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Security Implementation</strong>
+                                    <span class="milestone-date">Week 13</span>
+                                </div>
+                                <p>Authentication system, encryption, and FERPA compliance features</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Testing & Validation</strong>
+                                    <span class="milestone-date">Week 14-15</span>
+                                </div>
+                                <p>Test reports, bug fixes, and performance optimization</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Documentation</strong>
+                                    <span class="milestone-date">Week 16</span>
+                                </div>
+                                <p>User guide, technical documentation, and deployment instructions</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Deployment & Launch</strong>
+                                    <span class="milestone-date">Week 17</span>
+                                </div>
+                                <p>Live dashboard accessible to advisors with training materials</p>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-header">
+                                    <strong>Project Closure</strong>
+                                    <span class="milestone-date">Week 18</span>
+                                </div>
+                                <p>Final report, lessons learned, and handoff to operations team</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- F. Impact Statement -->
+                    <div class="charter-box">
+                        <h3>F. Impact Statement</h3>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: var(--bg-light); font-weight: 600;">
+                                    <th style="padding: 0.75rem; text-align: left; border-bottom: 2px solid var(--border-color);">Potential Impact</th>
+                                    <th style="padding: 0.75rem; text-align: left; border-bottom: 2px solid var(--border-color);">Systems / Units Impacted</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Changes to advisor workflows requiring adoption of new digital tools and data-driven decision-making processes</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Academic Advising Department</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Increased demand for data integration, extraction, and loading from multiple source systems (LMS, SIS, financial aid)</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Information Technology Services</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Need for data privacy compliance review, security audits, and FERPA policy validation for predictive analytics use</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Compliance & Legal Affairs</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Potential increase in student support service utilization as more at-risk students are identified and referred</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Tutoring Center, Counseling Services, Student Success Programs</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Enhanced reporting capabilities for retention metrics, intervention effectiveness, and institutional accountability</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Institutional Research & Assessment</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Shifts in resource allocation based on identified high-risk programs and student populations requiring targeted support</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Academic Affairs & Budget Planning</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Training requirements for advisors on dashboard use, predictive analytics interpretation, and ethical intervention practices</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Faculty Development & Training</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem;">Improved student outcomes may affect enrollment management strategies, recruitment messaging, and retention benchmarks</td>
+                                    <td style="padding: 0.75rem;">Enrollment Management & Admissions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- G. Roles and Responsibilities -->
+                    <div class="charter-box">
+                        <h3>G. Roles and Responsibilities</h3>
+                        <div class="roles-list">
+                            <div class="role-item">
+                                <h4>Sponsor</h4>
+                                <p><strong>Responsibilities:</strong> Provides overall direction on the project; approves the project charter and plan; secures resources for the project; confirms the project's goals and objectives; keeps abreast of major project activities; makes decisions on escalated issues; and assists in the resolution of roadblocks.</p>
+                                <p><strong>Team Member:</strong> Dr. Sarah Johnson, Director of Student Success<br>
+                                <strong>Contact:</strong> sarah.johnson@hsu.edu | (555) 123-4567</p>
+                            </div>
+                            <div class="role-item">
+                                <h4>Project Manager</h4>
+                                <p><strong>Responsibilities:</strong> Leads in the planning and development of the project; manages the project to scope; develops the project plan; identifies project deliverables; identifies risks and develops risk management plan; directs the project resources (team members); manages scope control and change management; oversees quality assurance of the project management process; maintains all documentation including the project plan; reports and forecasts project status; resolves conflicts within the project or between cross-functional teams; ensures that the project's product meets the business objectives; and communicates project status to stakeholders.</p>
+                                <p><strong>Team Member:</strong> Madhu Babu Takasar<br>
+                                <strong>Contact:</strong> madhu.takasar@hsu.edu | (555) 234-5678</p>
+                            </div>
+                            <div class="role-item">
+                                <h4>Team Members</h4>
+                                <p><strong>Responsibilities:</strong> Work toward the deliverables of the project; understand the work to be completed; complete research, data gathering, analysis, and documentation as outlined in the project plan; inform the project manager of issues, scope changes, and risk and quality concerns; proactively communicate status; and manage expectations.</p>
+                                <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                                    <li><strong>Bhavana Talari</strong> - Data Generation Lead<br>bhavana.talari@hsu.edu | (555) 345-6789</li>
+                                    <li><strong>Sujith Raj Vanamadi</strong> - Machine Learning Engineer<br>sujith.vanamadi@hsu.edu | (555) 456-7890</li>
+                                    <li><strong>Pardhu Maddula</strong> - Dashboard Developer<br>pardhu.maddula@hsu.edu | (555) 567-8901</li>
+                                    <li><strong>Shivathmika Neeradi</strong> - System Architect<br>shivathmika.neeradi@hsu.edu | (555) 678-9012</li>
+                                </ul>
+                            </div>
+                            <div class="role-item">
+                                <h4>Customer</h4>
+                                <p><strong>Responsibilities:</strong> The person or department requesting the deliverable; partners with the sponsor or project manager to create the Project Charter; partners with the project manager to manage the project including the timeline, work plan, testing, resources, training, and documentation of procedures; works with the project team to identify the technical approach to be used and the deliverables to be furnished at the completion of the project; provides a clear definition of the business objective; signs off on project deliverables; and takes ownership of the developed process and software.</p>
+                                <p><strong>Department:</strong> Academic Advising Department<br>
+                                <strong>Representative:</strong> Dr. Michael Chen, Dean of Academic Advising<br>
+                                <strong>Contact:</strong> michael.chen@hsu.edu | (555) 789-0123</p>
+                            </div>
+                            <div class="role-item">
+                                <h4>Subject Matter Experts</h4>
+                                <p><strong>Responsibilities:</strong> Provide expertise on specific subjects; maintain up-to-date experience and knowledge on the subject matter; and provide advice on what is critical to project success within their domain of expertise.</p>
+                                <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                                    <li><strong>Dr. Lisa Martinez</strong> - Educational Data Analytics Expert<br>lisa.martinez@hsu.edu | (555) 890-1234</li>
+                                    <li><strong>John Williams</strong> - IT Security Specialist<br>john.williams@hsu.edu | (555) 901-2345</li>
+                                    <li><strong>Emily Thompson</strong> - FERPA Compliance Officer<br>emily.thompson@hsu.edu | (555) 012-3456</li>
+                                    <li><strong>Dr. Robert Davis</strong> - Student Retention Researcher<br>robert.davis@hsu.edu | (555) 123-4568</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success Criteria -->
                     <div class="charter-box">
                         <h3>Success Criteria</h3>
                         <ul>
@@ -208,15 +436,6 @@
                             <li>Support monitoring of 18,000+ student records</li>
                             <li>Enable timely intervention delivery through automated emails</li>
                             <li>Ensure complete data integrity with error-free student profiles</li>
-                        </ul>
-                    </div>
-                    <div class="charter-box">
-                        <h3>Key Deliverables</h3>
-                        <ul>
-                            <li>Streamlit-based interactive dashboard</li>
-                            <li>Machine learning risk prediction model</li>
-                            <li>Comprehensive synthetic student dataset</li>
-                            <li>Automated intervention system with email notifications</li>
                         </ul>
                     </div>
                 </div>
@@ -262,15 +481,19 @@
                     <h4>Entity-Relationship Diagram</h4>
                     <img src="erd.png" alt="Entity-Relationship Diagram" class="diagram-img">
                     <div class="erd-explanation">
-                        <h5>Database Schema</h5>
-                        <p>The data model integrates comprehensive student information across multiple dimensions:</p>
+                        <h5>Database Schema & Entity Relationships</h5>
+                        <p>The comprehensive relational database model consists of eight interconnected entities, each serving a specific function in the student risk monitoring ecosystem:</p>
                         <ul>
-                            <li><strong>Student Demographics:</strong> StudentID, first_generation_flag, gender, ethnicity, residence, age_at_entry</li>
-                            <li><strong>Academic Performance:</strong> Cumulative GPA, term GPA, academic_probation_flag, course_drop_count, credits_attempted, enrollment_status</li>
-                            <li><strong>Engagement Metrics:</strong> Attendance rate, LMS logins, discussion posts, tutoring sessions, advisor meetings, library visits, assignments_on_time_pct</li>
-                            <li><strong>Financial Indicators:</strong> Financial_aid_flag, outstanding_balance, work_hours_per_week</li>
-                            <li><strong>Risk Predictions:</strong> Dropout_probability, at_risk_flag (generated by predictive model)</li>
+                            <li><strong>Students (Central Entity):</strong> Core table containing student_id (primary key), age, gender, ethnicity, first_generation_flag, major, residence, enrollment_status, and financial_aid_flag. Acts as the hub connecting all other entities through foreign key relationships.</li>
+                            <li><strong>Academic_Records:</strong> Stores term-by-term academic performance including record_id, student_id (foreign key), term, credits_attempted, course_drop_count, late_registration, gpa_term, cum_gpa, and probation_flag. One-to-many relationship from students (one student has multiple academic records across terms).</li>
+                            <li><strong>Engagement_Metrics:</strong> Tracks student participation with engagement_id, student_id (foreign key), term, lms_logins, attendance_rate, assignments_on_time_pct, discussion_posts, and library_visits. Captures behavioral indicators that predict retention risk.</li>
+                            <li><strong>Support_Services:</strong> Records utilization of support resources via service_id, student_id (foreign key), term, advisor_meetings, and tutoring_sessions. Helps identify students not accessing available help.</li>
+                            <li><strong>Financial_Records:</strong> Manages financial data through financial_id, student_id (foreign key), term, outstanding_balance, and work_hours_per_week. Links financial stress to academic risk.</li>
+                            <li><strong>Risk_Assessments:</strong> Contains predictive model outputs including assessment_id, student_id (foreign key), term, dropout_probability, and at_risk_flag. Stores ML-generated risk scores for advisor action.</li>
+                            <li><strong>Professors:</strong> Maintains faculty information with professor_id (primary key), username, email, and password_hash for secure authentication and intervention tracking.</li>
+                            <li><strong>Interventions:</strong> Logs advisor actions through intervention_id, student_id (foreign key), professor_id (foreign key), intervention_type, intervention_date, and notes. Creates accountability trail for intervention effectiveness analysis.</li>
                         </ul>
+                        <p><strong>Key Relationships:</strong> The students table serves as the central hub with one-to-many relationships to academic_records, engagement_metrics, support_services, financial_records, risk_assessments, and interventions. The interventions table has a many-to-one relationship with professors, enabling tracking of which advisors perform which interventions. This normalized structure prevents data redundancy while enabling comprehensive student profiles assembled through JOIN operations across all dimensions.</p>
                     </div>
                 </div>
 
@@ -324,72 +547,128 @@
             </div>
 
             <div class="dashboard-showcase">
+                <!-- Overview Metrics -->
                 <div class="dashboard-view">
-                    <h3>Overview Page</h3>
-                    <img src="dashboard1.png" alt="Overview Dashboard" class="dashboard-img">
-                    <div class="dashboard-features">
-                        <div class="feature-item">
-                            <span class="feature-badge">📊</span>
-                            <div>
-                                <h4>Key Metrics</h4>
-                                <p>Displays total students, at-risk count, low GPA count, probation status, and attendance statistics for quick institutional assessment</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-badge">📈</span>
-                            <div>
-                                <h4>Risk Trends</h4>
-                                <p>Visual indicators showing distribution of high-risk students across terms, attendance patterns, and GPA clusters</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-badge">🎯</span>
-                            <div>
-                                <h4>Engagement Summary</h4>
-                                <p>Overview of student engagement through LMS logins, tutoring sessions, advisor meetings, and assignment completion</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-badge">⚠️</span>
-                            <div>
-                                <h4>Early Warnings</h4>
-                                <p>Highlights emerging issues with 3,077 students below 80% attendance and 339 with GPA below 2.0</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Overview Metrics</h3>
+                    <img src="overview.png" alt="Overview Metrics Dashboard" class="dashboard-img">
+                    <p>Five key metric cards displaying total students (18,000), at-risk students (1,805 representing 10.0%), low attendance students (<80% threshold: 3,077), students with GPA below 2.0 (339), and students on academic probation (344). Provides instant snapshot of institutional health and risk distribution for quick assessment.</p>
                 </div>
 
+                <!-- At-Risk Students with Pagination -->
                 <div class="dashboard-view">
-                    <h3>At-Risk Students & Analytics</h3>
-                    <img src="dashboard2.png" alt="At-Risk Students and Analytics View" class="dashboard-img">
-                    <div class="dashboard-features">
-                        <div class="feature-item">
-                            <span class="feature-badge">🔍</span>
-                            <div>
-                                <h4>At-Risk Filtering</h4>
-                                <p>Configurable risk thresholds to identify students exceeding dropout probability, low attendance, or poor academic performance</p>
-                            </div>
+                    <h3>At-Risk Students with Pagination</h3>
+                    <img src="at risk students.png" alt="At-Risk Students Pagination View" class="dashboard-img">
+                    <p>Interactive slider allowing advisors to adjust minimum dropout probability from 0-100%, currently set at 30%. Paginated student list showing 1-10 of 1,805 students with expandable accordion-style records. Each student entry displays Student ID, GPA, and risk percentage with dropdown arrows for accessing comprehensive profile information.</p>
+                </div>
+
+                <!-- At-Risk Students Data Table -->
+                <div class="dashboard-view">
+                    <h3>At-Risk Students Data Table</h3>
+                    <img src="at risk students data.png" alt="At-Risk Students Data Table" class="dashboard-img">
+                    <p>Comprehensive data table with advanced filtering capabilities including major dropdown selector, maximum GPA slider (0.00-4.00), and maximum attendance percentage slider (0-100%). Currently showing 4,810 at-risk students with sortable columns displaying Student ID, Major, Term, Cumulative GPA, Attendance Rate, and Assignments On Time percentage for cross-variable analysis.</p>
+                </div>
+
+                <!-- Analytics Dashboard -->
+                <div class="dashboard-view">
+                    <h3>Student Analytics Dashboard</h3>
+                    <img src="analytics.png" alt="Analytics Dashboard with Visualizations" class="dashboard-img">
+                    <p>Multi-tab analytics interface displaying four summary metrics (Total Students: 18,000, At-Risk: 1805 at 10.0%, Average GPA: 2.84, Average Attendance: 87.7%). Features interactive attendance and GPA distribution histogram with 80% threshold marker, revealing right-skewed pattern with approximately 4,000 students at 90-95% peak. Tab navigation provides access to Performance, Engagement, Demographics, and Financial & Risk analytics.</p>
+                </div>
+
+                <!-- Student Search -->
+                <div class="dashboard-view">
+                    <h3>Student Search</h3>
+                    <img src="student search.png" alt="Student Search Interface" class="dashboard-img">
+                    <p>Clean search interface enabling advisors to quickly access individual student profiles by entering Student ID. Provides rapid access for one-on-one meetings, intervention follow-ups, and personalized advising workflows without browsing through large datasets. Supports preparation for scheduled appointments and review of student progress.</p>
+                </div>
+            </div>
+
+            <!-- Analytical Visualizations -->
+            <div class="analytics-section">
+                <h3 class="analytics-title">Analytical Visualizations</h3>
+                <p class="analytics-intro">Comprehensive data visualizations revealing patterns, trends, and risk factors across the student population</p>
+                
+                <div class="analytics-grid">
+                    <!-- At-Risk Students by Major -->
+                    <div class="analytics-card">
+                        <div class="analytics-image-container">
+                            <img src="Screenshot 2025-11-27 192855.png" alt="At-Risk Students by Major" class="analytics-img">
                         </div>
-                        <div class="feature-item">
-                            <span class="feature-badge">📋</span>
-                            <div>
-                                <h4>Actionable Recommendations</h4>
-                                <p>Detailed, risk-specific recommendations including tutoring, mentorship, advising sessions, and financial counseling</p>
-                            </div>
+                        <div class="analytics-description">
+                            <h4>Attendance Rate Distribution with 80% Risk Threshold</h4>
+                            <p>Attendance Rate Distribution with 80% Risk Threshold
+                                Histogram displaying the distribution of student attendance rates across the institution, with a critical 80% threshold marked by the red dashed line. The visualization reveals a right-skewed distribution with the majority of students maintaining strong attendance: approximately 4,000 students achieve 90-95% attendance (the highest peak), while 3,000 students maintain 85-90% attendance. However, the left side of the threshold shows concerning patterns with approximately 2,700 students in the 75-80% range, 1,300 students at 70-75%, 500 students at 65-70%, and small groups below 65% attendance. Combined, roughly 3,077 students fall below the 80% threshold, representing the at-risk population requiring immediate advisor outreach and intervention to prevent further disengagement and potential dropout.</p>
                         </div>
-                        <div class="feature-item">
-                            <span class="feature-badge">📧</span>
-                            <div>
-                                <h4>Email Interventions</h4>
-                                <p>Advisors can send asynchronous, personalized email notifications directly from the dashboard with confirmation logs</p>
-                            </div>
+                    </div>
+
+                    <!-- Demographic Distributions -->
+                    <div class="analytics-card">
+                        <div class="analytics-image-container">
+                            <img src="Screenshot 2025-11-27 192953.png" alt="Student Demographics" class="analytics-img">
                         </div>
-                        <div class="feature-item">
-                            <span class="feature-badge">📊</span>
-                            <div>
-                                <h4>Visual Analytics</h4>
-                                <p>Histograms, scatter plots, boxplots, and correlation heatmaps reveal patterns in GPA, attendance, engagement, demographics, and financial factors</p>
-                            </div>
+                        <div class="analytics-description">
+                            <h4>Cumulative GPA Distribution with 2.0 Academic Probation Threshold</h4>
+                            <p>This histogram displays the distribution of cumulative GPA (Grade Point Average) across a population, with a red dashed line marking a 2.0 threshold. The x-axis represents GPA values ranging from 1.5 to 4.0, while the y-axis shows the count or frequency of students at each GPA level. The distribution is roughly bell-shaped but slightly left-skewed, with the highest concentration of students having GPAs between 2.5 and 3.0, where the count peaks at approximately 3,500 students. The 2.0 threshold likely represents a minimum academic standing requirement, such as the cutoff for good academic standing or eligibility for certain programs. Notably, the majority of students fall above this threshold, with relatively few students (fewer than 500) having GPAs below 2.0. The distribution tapers off at both extremes, with fewer students at the lowest (below 2.0) and highest (above 3.5) GPA ranges, suggesting most students maintain moderate to good academic performance</p>
+                        </div>
+                    </div>
+
+                    <!-- Dropout Probability Distribution -->
+                    <div class="analytics-card">
+                        <div class="analytics-image-container">
+                            <img src="Screenshot 2025-11-27 193009.png" alt="Predicted Dropout Probability" class="analytics-img">
+                        </div>
+                        <div class="analytics-description">
+                        <h4>At-Risk Students by Major</h4>
+                        <p>
+                        </p>This horizontal bar chart illustrates the number of at-risk students across different academic majors, with color intensity indicating the percentage of at-risk students within each program. Mathematics leads with the highest count of 243 at-risk students, shown in the darkest maroon color, suggesting it has the highest percentage (approximately 12%) of students facing academic challenges. Computer Science and Engineering follow closely with 215 and 210 at-risk students respectively, also displaying darker red tones that indicate relatively high percentages. The mid-range includes health and science programs like Nursing (192), Chemistry (185), and Biology (184), shown in lighter orange shades representing percentages around 10%. The majors with fewer at-risk students include Psychology and Arts (both at 150), Education (145), and Business (131), displayed in the palest colors indicating lower percentages around 8%.</p>
+                        </div>
+                    </div>
+
+                    <!-- Attendance Rate Analysis -->
+                    <div class="analytics-card">
+                        <div class="analytics-image-container">
+                            <img src="Screenshot 2025-11-27 193042.png" alt="Attendance Rate Distribution" class="analytics-img">
+                        </div>
+                        <div class="analytics-description">
+                            <h4>Students by Gender, Enrollment Status, and First Generation Status</h4>
+                            <p>Students by Gender (left chart in purple tones): The student body is nearly evenly distributed across three categories, with male students at 33.5%, female students at 33.5%, and students identifying as "Other" at 33%. This shows a remarkably balanced gender distribution with strong representation across all categories.
+                                Enrollment Status (middle chart in blue tones): The vast majority of students are enrolled full-time at 85.4%, while part-time students make up only 14.6%. This indicates a predominantly full-time student population, which is typical for traditional undergraduate institutions.
+                                First Generation Status (right chart in green tones): Non-first-generation students comprise 70% of the population, while first-generation college students represent 30%. This shows that while most students have family members who attended college before them, there is still a substantial proportion of students who are the first in their families to pursue higher education, highlighting the importance of support services for this demographic.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Ethnicity and Age Analysis -->
+                    <div class="analytics-card">
+                        <div class="analytics-image-container">
+                            <img src="Screenshot 2025-11-27 193105.png" alt="Ethnicity and Age Distribution" class="analytics-img">
+                        </div>
+                        <div class="analytics-description">
+                            <h4>Student Distribution by Ethnicity & Age Group Risk Analysis</h4>
+                            <p>Dual visualization providing demographic insights and risk pattern analysis. The left panel, "Student Distribution by Ethnicity," displays remarkably balanced representation with approximately 3,650 White students (red bar), 3,600 Asian students (mint green), 3,600 Hispanic students (turquoise), 3,550 Black students (blue), and 3,550 Other category students (purple). The color gradient from 3,550 to 3,650 shows minimal variation, confirming equitable ethnic representation. The right panel, "Age Group Risk Analysis," reveals at-risk percentages across five age cohorts: Under 20 shows 9.8% at-risk (lightest peach), the 20-25 cohort displays 10.2% at-risk (darkest burgundy, representing the highest risk group), 26-30 shows 9.7% at-risk (light peach), 31-35 shows moderate risk (medium peach), and 35+ shows 10.2% at-risk (medium-dark peach). The 20-25 age group annotation ("Age Group=26-30, At-Risk %=9.7") highlights this as the largest student cohort. The remarkably consistent at-risk percentages (9.7-10.2% across all ages) demonstrate that our predictive model evaluates students based on behavior and performance rather than demographic characteristics, ensuring ethical, unbiased risk assessment across all ethnic and age groups.</p>
+                        </div>
+                    </div>
+
+                    <!-- GPA Distribution -->
+                    <div class="analytics-card">
+                        <div class="analytics-image-container">
+                            <img src="Screenshot 2025-11-27 193127.png" alt="Cumulative GPA Distribution" class="analytics-img">
+                        </div>
+                        <div class="analytics-description">
+                            <h4>Predicted Dropout Probability Distribution</h4>
+                            <p>This histogram displays the distribution of predicted dropout probabilities for students, revealing a stark bimodal pattern. The x-axis represents the predicted dropout probability ranging from 0 (no risk) to 1 (high risk), while the y-axis shows the count of students in each probability range.
+                                The distribution shows two distinct peaks at opposite ends of the spectrum. The overwhelming majority of students, approximately 15,000, cluster at the far left near 0, indicating they have a very low predicted probability of dropping out. Conversely, a much smaller group of around 2,000 students appears at the far right near a probability of 1, suggesting they are at extremely high risk of dropping out. The middle range (probabilities between 0.2 and 0.8) is nearly empty, with minimal student counts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Correlation Heatmap -->
+                    <div class="analytics-card full-width">
+                        <div class="analytics-image-container">
+                            <img src="Screenshot 2025-11-27 193145.png" alt="Correlation Heatmap" class="analytics-img">
+                        </div>
+                        <div class="analytics-description">
+                            <h4>Feature Correlation Heatmap Analysis</h4>
+                            <p>Comprehensive correlation matrix (15×15) displaying relationships between academic, engagement, behavioral, and risk prediction variables using a red-to-blue color scheme (correlation values from +1 to -1). The diagonal dark red line represents perfect self-correlation (1.0). Critical findings reveal strong positive correlations among academic metrics: gpa_term and cum_gpa show deep red correlation (~0.8-0.9), indicating consistent performance across terms. Engagement behaviors cluster together with moderate positive correlations: attendance_rate, assignments_on_time_pct, and lms_logins show light red/orange relationships (~0.3-0.5), confirming that engaged students participate across multiple dimensions. The bottom two rows (pred_dropout_probability and pred_at_risk_flag) are particularly revealing: they display strong negative correlations (dark blue, ~-0.4 to -0.6) with academic performance metrics (cum_gpa, gpa_term, attendance_rate) but show positive correlations (blue/purple, ~0.2-0.4) with risk indicators like course_drop_count. Notably, demographic factors (age, gender, ethnicity) show minimal correlation with dropout probability (light blue/white, near 0), validating our ethical modeling approach. Work_hours_per_week displays a notable negative correlation (dark blue) with advisor_meetings and tutoring_sessions, suggesting working students have less time for support services. This heatmap confirms that academic performance and engagement behaviors are the strongest predictors of student success, justifying our feature selection strategy and demonstrating that the model prioritizes actionable behavioral indicators over immutable demographic characteristics.</p>
                         </div>
                     </div>
                 </div>
@@ -626,9 +905,9 @@
                 <div class="team-reflection">
                     <h3>Team Reflection</h3>
                     <div class="reflection-box">
-                        <p>This project pushed my team to think critically about the intersection of data, technology, and student success. I entered with a straightforward goal—build a risk monitoring dashboard—but quickly realized the complexity of creating a truly useful tool that balances predictive power with ethical responsibility.</p>
-                        <p>Each team member brought unique strengths: some excelled at data engineering, others at machine learning, and some at visualization design and user experience. I learned to leverage these differences and work collaboratively. My most productive moments came when I embraced diverse perspectives and challenged assumptions about what "at-risk" means and how to intervene effectively.</p>
-                        <p>The most valuable lesson was understanding that technology alone doesn't solve problems—it enables solutions when combined with deep user understanding, ethical considerations, and iterative refinement. I'm proud not just of what I built, but of how I built it: collaboratively, thoughtfully, and with student success at the center.</p>
+                        <p>This project pushed our team to think critically about the intersection of data, technology, and student success. We entered with a straightforward goal—build a risk monitoring dashboard—but quickly realized the complexity of creating a truly useful tool that balances predictive power with ethical responsibility.</p>
+                        <p>Each team member brought unique strengths: some excelled at data engineering, others at machine learning, and some at visualization design and user experience. We learned to leverage these differences and work collaboratively. Our most productive moments came when we embraced diverse perspectives and challenged assumptions about what "at-risk" means and how to intervene effectively.</p>
+                        <p>The most valuable lesson was understanding that technology alone doesn't solve problems—it enables solutions when combined with deep user understanding, ethical considerations, and iterative refinement. We're proud not just of what we built, but of how we built it: collaboratively, thoughtfully, and with student success at the center.</p>
                     </div>
                 </div>
 
@@ -678,7 +957,7 @@
                         <span class="stat-label">Model Accuracy</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">18,000</span>
+                        <span class="stat-value">18,000+</span>
                         <span class="stat-label">Student Records</span>
                     </div>
                     <div class="stat-item">
@@ -718,4 +997,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
