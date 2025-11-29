@@ -105,18 +105,16 @@
                         <li><strong>Learning Analytics Framework:</strong> Applied established learning analytics principles from educational research to structure our data collection and analysis approach, ensuring alignment with proven methods for identifying at-risk student behaviors</li>
                         <li><strong>Dashboard Design Principles:</strong> Leveraged research on educational data visualization and cognitive load theory to create an interface that advisors can quickly interpret and act upon without extensive training</li>
                         <li><strong>Early Warning Systems:</strong> Reviewed literature on predictive models in higher education, incorporating best practices from institutions that successfully reduced attrition through proactive intervention strategies</li>
-                        <li><strong>Organizational Data Integration:</strong> Studied frameworks for breaking down data silos in educational institutions, implementing structures that enable cross-functional data sharing while maintaining privacy standards</li>
                     </ul>
                 </div>
                 <div class="research-methods">
                     <h3>Key Learnings & Achievements</h3>
                     <ul>
-                        <li><strong>Synthetic Data Validity:</strong> Successfully created a realistic dataset reflecting national benchmarks for first-generation students, GPA distributions, and attendance patterns, validating that synthetic data can effectively simulate real-world scenarios for model development</li>
                         <li><strong>Multi-Factor Risk Assessment:</strong> Discovered that combining academic, engagement, and financial indicators provides significantly more accurate risk prediction than any single factor alone, confirming the importance of holistic student monitoring</li>
                         <li><strong>Engagement as Early Indicator:</strong> Research revealed that disengagement signals (low LMS logins, missed advisor meetings, declining tutoring attendance) often precede academic decline by several weeks, creating critical intervention windows</li>
-                        <li><strong>Advisor-Centric Design:</strong> User research with academic advisors identified that color-coded alerts, risk thresholds, and one-click email interventions significantly improve workflow efficiency and intervention response times</li>
-                        <li><strong>Scalability Validation:</strong> Demonstrated that our architecture can handle large-scale datasets (18,000+ students) while maintaining responsive performance through strategic caching and data optimization techniques</li>
-                        <li><strong>Ethical AI Implementation:</strong> Achieved fair prediction outcomes by prioritizing behavioral and academic indicators over demographic attributes, reducing bias while maintaining prediction effectiveness</li>
+                        <li><strong>Synthetic Data Validity:</strong> Successfully created a realistic dataset reflecting national benchmarks for first-generation students, GPA distributions, and attendance patterns, validating that synthetic data can effectively simulate real-world scenarios for model development</li>
+                        <li><strong>Advisor-Centric Design:</strong> User research with academic advisors identified that alerts, risk thresholds, and one-click email interventions significantly improve workflow efficiency and intervention response times</li>
+                        <li><strong>Scalability Validation:</strong> Demonstrated that our architecture can handle large-scale datasets (18,000 students) while maintaining responsive performance through strategic caching and data optimization techniques</li>
                     </ul>
                 </div>
             </div>
@@ -133,7 +131,7 @@
             <div class="solution-content">
                 <div class="solution-overview">
                     <h3>The Student Risk Monitoring Dashboard</h3>
-                    <p>A comprehensive platform designed to proactively identify undergraduate students at risk of academic underperformance or dropout. The system integrates three core components: synthetic data generation, predictive modeling using machine learning, and an interactive Streamlit-based dashboard, providing advisors with actionable insights and timely interventions.</p>
+                    <p>A comprehensive platform designed to proactively identify undergraduate students at risk of academic underperformance or program dropout. The system integrates three core components: synthetic data generation, predictive modeling using machine learning, and an interactive Streamlit-based dashboard, providing advisors with actionable insights and timely interventions.</p>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -543,7 +541,7 @@
             </div>
             
             <div class="dashboard-intro">
-                <p>The Student Risk Monitoring Dashboard was designed to meet the needs of Horizon State University advisors by combining early risk detection, unified student insights, and actionable intervention tools in a streamlined interface. The dashboard follows a top-down flow: advisors begin with an overview of institutional-level indicators, move into individualized at-risk student lists, and explore deeper analytic insights through visualizations. Live dashboard: <a href="https://myappstudent-successdashboard123.streamlit.app/" target="_blank" style="color: #0066cc;">myappstudent-successdashboard123.streamlit.app</a></p>
+                <p>The Student Risk Monitoring Dashboard was designed to meet the needs of Horizon State University advisors by combining early risk detection, unified student insights, and actionable intervention tools in a streamlined interface. The dashboard follows a top-down flow: advisors begin with an overview of institutional-level indicators, move into individualized at-risk student lists, and explore deeper analytic insights through visualizations. Live dashboard: <a href="https://myappstudentsuccessdashboard123.streamlit.app/" target="_blank" style="color: #0066cc;">myappstudent-successdashboard123.streamlit.app</a></p>
             </div>
 
             <div class="dashboard-showcase">
@@ -572,7 +570,7 @@
                 <div class="dashboard-view">
                     <h3>Student Analytics Dashboard</h3>
                     <img src="analytics.png" alt="Analytics Dashboard with Visualizations" class="dashboard-img">
-                    <p>Multi-tab analytics interface displaying four summary metrics (Total Students: 18,000, At-Risk: 1805 at 10.0%, Average GPA: 2.84, Average Attendance: 87.7%). Features interactive attendance and GPA distribution histogram with 80% threshold marker, revealing right-skewed pattern with approximately 4,000 students at 90-95% peak. Tab navigation provides access to Performance, Engagement, Demographics, and Financial & Risk analytics.</p>
+                    <p>Multi-tab analytics interface displaying four summary metrics (Total Students: 18,000, At-Risk: 1805 at 10.0%, Average GPA: 2.84, Average Attendance: 87.7%).Tab navigation provides access to Performance, Engagement, Demographics, and Financial & Risk analytics.</p>
                 </div>
 
                 <!-- Student Search -->
@@ -778,7 +776,6 @@
                             <li>Architecture supports encrypted storage and secure authentication for future deployment</li>
                             <li>Salted SHA-256 password hashing and TLS encryption</li>
                             <li>Controlled access through credential store</li>
-                            <li>Compliance with FERPA and data protection regulations</li>
                         </ul>
                     </div>
 
@@ -814,7 +811,6 @@
                             <li>Interventions promote support rather than punitive follow-up</li>
                             <li>No unequal treatment based on demographic characteristics</li>
                             <li>System reinforces fairness in advisor intervention application</li>
-                            <li>Regular evaluation to identify and correct potential biases</li>
                         </ul>
                     </div>
 
@@ -865,29 +861,15 @@
                         <h3>Technical Learnings</h3>
                         <ul>
                             <li><strong>Synthetic Data Realism:</strong> Generating a synthetic dataset that was realistic enough to validate models yet flexible for experimentation required repeated refinement and cross-checks against national benchmarks.</li>
-                            <li><strong>Model Optimization:</strong> Experimented with several feature combinations and risk scoring approaches to optimize both accuracy (92%) and interpretability for advisor use.</li>
-                            <li><strong>Dashboard Responsiveness:</strong> Ensuring the Streamlit dashboard remained responsive and interactive for large datasets tested data handling and caching strategies.</li>
                             <li><strong>Architecture Importance:</strong> Having a clear solution architecture with business, IS, and technology layers helped develop the application without gaps and maintained consistency.</li>
                         </ul>
                     </div>
-
-                    <div class="lesson-card">
-                        <h3>Key Decisions</h3>
-                        <ul>
-                            <li><strong>Dataset Design:</strong> Balanced realism with model robustness by ensuring variables like GPA, attendance, and engagement mirrored real student behaviors while providing meaningful variance.</li>
-                            <li><strong>Visualization Strategy:</strong> Iteratively revised charts, color coding, and layouts based on usability feedback to help advisors quickly identify at-risk students without cognitive overload.</li>
-                            <li><strong>Feature Engineering:</strong> Prioritized academic, engagement, and financial indicators over demographic attributes to reduce bias and ensure fair predictions.</li>
-                            <li><strong>Batch Processing:</strong> Separated model training from dashboard usage to ensure efficiency and keep advisor focus on interventions rather than technical processes.</li>
-                        </ul>
-                    </div>
-
+                    
                     <div class="lesson-card">
                         <h3>Team Collaboration</h3>
                         <ul>
-                            <li><strong>Distributed Responsibilities:</strong> One member led data generation, another predictive modeling, a third dashboard UI, a fourth system architecture, and a fifth deployment and documentation.</li>
-                            <li><strong>Collective Engagement:</strong> Despite lead roles, all members actively contributed to discussions, design decisions, testing, and improvements.</li>
-                            <li><strong>Cross-Validation:</strong> Working collaboratively allowed us to leverage each member's expertise, make informed decisions, and address challenges efficiently.</li>
-                            <li><strong>Aligned Outcomes:</strong> This approach ensured that architecture, dashboard, predictive models, and deployment were aligned with project objectives for early risk identification.</li>
+                            <li><strong>Collective Engagement:</strong>Even though responsibilities were distributed across data generation, modeling, UI, architecture, and deployment, active involvement from all members in discussions and decisions resulted in stronger, more aligned project outcomes.</li>
+                            <li><strong>Collaborative validation strengthens decisions: By leveraging each member’s expertise and continuously cross-checking work, the team was able to solve challenges faster and ensure that the architecture, dashboard, models, and deployment all supported the project’s goal of early risk identification.</li>
                         </ul>
                     </div>
 
@@ -905,9 +887,9 @@
                 <div class="team-reflection">
                     <h3>Team Reflection</h3>
                     <div class="reflection-box">
-                        <p>This project pushed our team to think critically about the intersection of data, technology, and student success. We entered with a straightforward goal—build a risk monitoring dashboard—but quickly realized the complexity of creating a truly useful tool that balances predictive power with ethical responsibility.</p>
+                        <p>This project pushed our team to think critically about the intersection of data, technology, and student success. We entered with a straightforward goal to build a risk monitoring dashboard, but quickly realized the complexity of creating a truly useful tool that balances predictive power with ethical responsibility.</p>
                         <p>Each team member brought unique strengths: some excelled at data engineering, others at machine learning, and some at visualization design and user experience. We learned to leverage these differences and work collaboratively. Our most productive moments came when we embraced diverse perspectives and challenged assumptions about what "at-risk" means and how to intervene effectively.</p>
-                        <p>The most valuable lesson was understanding that technology alone doesn't solve problems—it enables solutions when combined with deep user understanding, ethical considerations, and iterative refinement. We're proud not just of what we built, but of how we built it: collaboratively, thoughtfully, and with student success at the center.</p>
+                        <p>The most valuable lesson was understanding that technology alone doesn't solve problems, it enables solutions when combined with deep user understanding, ethical considerations, and iterative refinement. We're proud not just of what we built, but of how we built it: collaboratively, thoughtfully, and with student success at the center.</p>
                     </div>
                 </div>
 
@@ -923,20 +905,8 @@
                             <p>Develop training modules for advisors and automated intervention workflows to maximize system effectiveness</p>
                         </div>
                         <div class="future-item">
-                            <h4>Mobile Application</h4>
-                            <p>Build native iOS and Android apps for advisors to monitor students and trigger interventions on-the-go</p>
-                        </div>
-                        <div class="future-item">
-                            <h4>Advanced Predictive Models</h4>
-                            <p>Incorporate deep learning and ensemble methods to improve accuracy and identify complex risk patterns</p>
-                        </div>
-                        <div class="future-item">
-                            <h4>Student Self-Service Portal</h4>
-                            <p>Enable students to view their own risk indicators, progress tracking, and personalized recommendations</p>
-                        </div>
-                        <div class="future-item">
-                            <h4>Multi-Institution Deployment</h4>
-                            <p>Scale the solution to serve multiple universities with shared insights and best practices for student retention</p>
+                            <h4>Collaboration</h4>
+                            <p>Collaborating closely with academic advisors, IT departments, and student success offices will help advisors to  guide the design of interventions, IT will support data integration and system setup, and student success offices will ensure the system aligns with institutional goals. These partnerships will be crucial to refine the system and make it practical for real-world use.</p>
                         </div>
                     </div>
                 </div>
@@ -949,7 +919,7 @@
         <div class="container">
             <div class="conclusion-content">
                 <h2>Project Impact & Outcomes</h2>
-                <p class="conclusion-text">The Student Risk Monitoring Dashboard delivers a fully functional application that demonstrates how predictive analytics and centralized insights can support student success at Horizon State University. By consolidating fragmented data—including GPA, attendance, course completion, engagement metrics, work hours, and financial aid—into a single dashboard, advisors can identify at-risk students efficiently and take targeted interventions.</p>
+                <p class="conclusion-text">The Student Risk Monitoring Dashboard delivers a fully functional application that demonstrates how predictive analytics and centralized insights can support student success at Horizon State University. By consolidating fragmented data, including GPA, attendance, course completion, engagement metrics, work hours, and financial aid into a single dashboard, advisors can identify at-risk students efficiently and take targeted interventions.</p>
                 <p class="conclusion-text">In the long term, the platform has the potential to increase retention, improve academic performance, and reduce program dropout rates, mitigating financial and reputational losses for the university. This project validated the power of research-backed design, ethical data practices, and collaborative development. Most importantly, it showed that when institutions have access to proactive, data-driven insights, they can create an equitable advising culture that supports every student's path to success.</p>
                 <div class="conclusion-stats">
                     <div class="stat-item">
@@ -957,7 +927,7 @@
                         <span class="stat-label">Model Accuracy</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">18,000+</span>
+                        <span class="stat-value">18,000</span>
                         <span class="stat-label">Student Records</span>
                     </div>
                     <div class="stat-item">
